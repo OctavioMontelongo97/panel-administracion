@@ -1,0 +1,129 @@
+:root {
+    --verde: #8bc34a;
+    --azul: #03a9f4;
+    --morado: #ab47bc;
+    --naranja: #ffb300;
+    --azulObscuro: #25476a;
+    --blanco: #fff;
+    --claro: #e1e1e1;
+    --gris: #ecf0f5;
+    --grisObscuro: #777;
+    --negro: #000;
+    --obscuro: #212121; 
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.btn-success {
+    border: none;
+}
+
+.btn-success, .btn-success:hover {
+    background-color: var(--verde) !important;
+}
+
+.bg-success {
+    background-color: var(--verde) !important;
+}
+
+.bg-primary, .btn-primary, .btn-primary:hover {
+    background-color: var(--azulObscuro) !important;
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: var(--azulObscuro) !important;
+    border: none;
+}
+
+/** login **/
+.login {
+    height: 100vh;
+    background-image: url(../img/libros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login form {
+    border-radius: 5px;
+    background-color: var(--blanco);
+    padding: 20px 30px;
+    width: 50%;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+/** clientes.html **/
+.btnPerfil a{
+    display: block !important;
+}
+
+.navbar-collapse .col {
+    padding: 0 !important;
+}
+
+.bd-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.clientes-aside {
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    margin-top: 55px;
+    top: 0;
+    bottom: 0;
+}
+
+@media(min-width: 992px) {
+    .clientes-aside {
+        margin-top: 70px;
+    }
+}
+
+.main__content--clientes {
+    margin-left: 260px;
+    position: relative;
+    left: 0;
+    min-height: 100%;
+}
+
+.boton {
+    min-height: 120px;
+}
+
+.boton p {
+    margin: 0;
+}
+
+.boton i {
+    font-size: 3rem;
+}
+
+.boton a:hover,
+.btnPerfil a:hover {
+    color: var(--white) !important;
+    text-decoration: none;
+}
+
+/** ventas.html **/
+#ventas {
+    height: 250px;
+}
